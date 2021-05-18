@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/ic_bg">
+  <View
+      android:id="@+id/viewWhite"
+      android:layout_width="372dp"
+      android:layout_height="257dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/rect_white_radius"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline2" />
+  <Button
+      android:id="@+id/btnStart"
+      android:textStyle="bold"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:paddingTop="15dp"
+      android:paddingBottom="15dp"
+      android:text="START"
+      app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+  <EditText
+      android:id="@+id/editTextTextPersonName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:paddingStart="5dp"
+      android:background="@drawable/rect_edt"
+      android:ems="10"
+      android:hint="Name"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="@+id/viewWhite"
+      app:layout_constraintHorizontal_bias="0.508"
+      app:layout_constraintStart_toStartOf="@+id/viewWhite"
+      app:layout_constraintTop_toBottomOf="@+id/txtEnterName" />
+  <TextView
+      android:id="@+id/txtWelcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:fontFamily="@font/roboto_bold"
+      android:text="Welcome"
+      android:textColor="@color/black"
+      android:textSize="30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline2" />
+  <TextView
+      android:id="@+id/txtEnterName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Please enter your name."
+      app:layout_constraintEnd_toEndOf="@+id/txtWelcome"
+      app:layout_constraintHorizontal_bias="0.51"
+      app:layout_constraintStart_toStartOf="@+id/txtWelcome"
+      app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="212dp" />
+  <TextView
+      android:id="@+id/textView"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="36dp"
+      android:text="QuizApp"
+      android:textColor="@color/white"
+      android:textSize="22dp"
+      app:layout_constraintBottom_toTopOf="@+id/viewWhite"
+      app:layout_constraintEnd_toEndOf="@+id/txtWelcome"
+      app:layout_constraintStart_toStartOf="@+id/txtWelcome" />
+</androidx.constraintlayout.widget.ConstraintLayout>
