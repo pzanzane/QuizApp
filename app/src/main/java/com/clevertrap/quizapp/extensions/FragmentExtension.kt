@@ -26,10 +26,10 @@ import androidx.lifecycle.ViewModelProvider
  * limitations under the License.
  */
 
-fun <T: ViewDataBinding> Fragment.fragmentBinding(inflater: LayoutInflater,
-                                                  layoutId: Int,
+fun <T: ViewDataBinding> Fragment.fragmentBinding(layoutId: Int,
                                                   parent: ViewGroup?,
-                                                  attachedToRoot: Boolean): T {
+                                                  inflater: LayoutInflater = layoutInflater,
+                                                  attachedToRoot: Boolean = false): T {
   val t = DataBindingUtil.inflate<T>(inflater, layoutId, parent, attachedToRoot)
   // To release databinding when activity is released.
   t.lifecycleOwner = this

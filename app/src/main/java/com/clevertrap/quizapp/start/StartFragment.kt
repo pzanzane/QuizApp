@@ -24,7 +24,7 @@ class StartFragment : Fragment() {
     savedInstanceState: Bundle?
   ): View {
     // Inflate the layout for this fragment
-    val binding = fragmentBinding<FragmentStartBinding>(inflater, R.layout.fragment_start, container, false)
+    val binding = fragmentBinding<FragmentStartBinding>(R.layout.fragment_start, container)
     binding.viewModel = viewModelStart
     return binding.root
   }
